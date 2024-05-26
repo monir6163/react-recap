@@ -1,8 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 
 const Sidebar = () => {
   const { pathname } = useLocation();
-  console.log(pathname);
+  const { logOut } = useAuth();
+  const handleLogout = async () => {
+    await logOut();
+  };
   return (
     <div className="w-64 shadow-xl bg-slate-900 text-white h-screen">
       <div className="p-6">
@@ -46,7 +50,11 @@ const Sidebar = () => {
           </li>
 
           <li className="mb-4">
-            <a href="#" className="text-white">
+            <a
+              href="#"
+              className="px-3 py-2 bg-white text-black hover:shadow-lg hover:shadow-indigo-500/20 w-full flex rounded-sm gap-x-2 items-center justify-start hover:text-white hover:bg-indigo-500 transition-all duration-200 ease-in-out cursor-pointer"
+              onClick={handleLogout}
+            >
               Logout
             </a>
           </li>

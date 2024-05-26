@@ -23,13 +23,8 @@ const AuthProvider = ({ children }) => {
   const createUser = async (email, password) => {
     try {
       setLoading(true);
-      const newuser = await createUserWithEmailAndPassword(
-        auth,
-        email,
-        password
-      );
+      await createUserWithEmailAndPassword(auth, email, password);
       toast.success("Registration success");
-      return newuser;
     } catch (error) {
       toast.error(
         error?.customData?._tokenResponse?.error?.message ||
@@ -41,9 +36,8 @@ const AuthProvider = ({ children }) => {
   const signIn = async (email, password) => {
     try {
       setLoading(true);
-      const signin = await signInWithEmailAndPassword(auth, email, password);
+      await signInWithEmailAndPassword(auth, email, password);
       toast.success("Login success");
-      return signin;
     } catch (error) {
       toast.error(error?.code || "Login faield");
     }
@@ -51,9 +45,8 @@ const AuthProvider = ({ children }) => {
 
   const googleLogin = async () => {
     try {
-      const googlelogin = await signInWithPopup(auth, googleProvider);
+      await signInWithPopup(auth, googleProvider);
       toast.success("Login success");
-      return googlelogin;
     } catch (error) {
       toast.error("Login faield");
     }
@@ -61,9 +54,8 @@ const AuthProvider = ({ children }) => {
 
   const logOut = async () => {
     try {
-      const logout = signOut(auth).then(() => setUser(null));
+      await signOut(auth).then(() => setUser(null));
       toast.success("logout success");
-      return logout;
     } catch (error) {
       toast.error("Something else");
     }
