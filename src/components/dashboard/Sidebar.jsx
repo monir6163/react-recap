@@ -5,7 +5,10 @@ const Sidebar = () => {
   const { pathname } = useLocation();
   const { logOut } = useAuth();
   const handleLogout = async () => {
-    await logOut();
+    const isConfirmed = window.confirm("Are you sure you want to Logout?");
+    if (isConfirmed) {
+      await logOut();
+    }
   };
   return (
     <div className="w-64 shadow-xl bg-slate-900 text-white h-screen">
