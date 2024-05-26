@@ -1,0 +1,68 @@
+{
+  "dogs": [
+    {
+      "id": "1",
+      "name": "Labrador",
+      "price": "5000",
+      "stock": 150,
+      "description": "A comfortable wireless mouse with ergonomic design and long battery life.",
+      "img_url": "https://cdn.pixabay.com/photo/2024/02/05/16/23/labrador-8554882_640.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Golden Retriever",
+      "price": 89.99,
+      "stock": 75,
+      "description": "A durable mechanical keyboard with customizable RGB lighting.",
+      "img_url": "https://cdn.pixabay.com/photo/2023/12/09/15/04/dog-8439530_640.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Bulldog",
+      "price": 199.99,
+      "stock": 30,
+      "description": "A 24-inch HD monitor with stunning color accuracy and wide viewing angles.",
+      "img_url": "https://cdn.pixabay.com/photo/2017/09/25/13/12/dog-2785074_960_720.jpg"
+    },
+    {
+      "id": "4",
+      "name": "German Shepherd",
+      "price": 59.99,
+      "stock": 120,
+      "description": "A portable external hard drive with 1TB of storage capacity.",
+      "img_url": "https://cdn.pixabay.com/photo/2019/07/23/13/51/shepherd-dog-4357790_640.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Dachshund",
+      "price": 39.99,
+      "stock": 200,
+      "description": "A versatile USB-C hub with multiple ports for enhanced connectivity.",
+      "img_url": "https://cdn.pixabay.com/photo/2016/07/15/15/55/dachshund-1519374_640.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Puppy",
+      "price": 49.99,
+      "stock": 80,
+      "description": "A portable Bluetooth speaker with excellent sound quality.",
+      "img_url": "https://cdn.pixabay.com/photo/2016/02/18/18/37/puppy-1207816_640.jpg"
+    },
+    {
+      "id": "7",
+      "name": "test",
+      "price": "34",
+      "stock": "45",
+      "description": "efsdffsdgsdf",
+      "img_url": "https://www.xtivia.com/wp-content/uploads/Using-react-jsonschema-form-with-Tailwind-CSS-and-daisyUI.jpg"
+    },
+    {
+      "id": "8",
+      "name": "ccs tailwind",
+      "price": "34",
+      "stock": "50",
+      "description": "gtegdfbdf",
+      "img_url": "https://www.xtivia.com/wp-content/uploads/XTIVIA-Logo-R-250px.png"
+    }
+  ]
+}
