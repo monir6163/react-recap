@@ -1,9 +1,7 @@
+import Abouts from "../components/About";
+
 const About = () => {
-  return (
-    <div>
-      <h1>this about page</h1>
-    </div>
-  );
+  return <Abouts />;
 };
 
 export default About;
